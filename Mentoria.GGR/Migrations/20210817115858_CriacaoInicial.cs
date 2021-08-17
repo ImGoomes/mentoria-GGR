@@ -18,8 +18,8 @@ namespace Mentoria.GGR.Migrations
                     DataNascimento = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Ativo = table.Column<bool>(type: "bit", nullable: false),
                     CriadoEm = table.Column<DateTime>(type: "DATETIME", nullable: false),
-                    AtualizadoEM = table.Column<DateTime>(type: "DATETIME", nullable: false),
-                    RemovidoEm = table.Column<DateTime>(type: "DATETIME", nullable: false)
+                    AtualizadoEm = table.Column<DateTime>(type: "DATETIME", nullable: true),
+                    RemovidoEm = table.Column<DateTime>(type: "DATETIME", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -37,8 +37,8 @@ namespace Mentoria.GGR.Migrations
                     Fraqueza = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Ativo = table.Column<bool>(type: "bit", nullable: false),
                     CriadoEm = table.Column<DateTime>(type: "DATETIME", nullable: false),
-                    AtualizadoEM = table.Column<DateTime>(type: "DATETIME", nullable: false),
-                    RemovidoEm = table.Column<DateTime>(type: "DATETIME", nullable: false)
+                    AtualizadoEm = table.Column<DateTime>(type: "DATETIME", nullable: true),
+                    RemovidoEm = table.Column<DateTime>(type: "DATETIME", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -55,8 +55,8 @@ namespace Mentoria.GGR.Migrations
                     PoderID = table.Column<int>(type: "int", nullable: false),
                     Ativo = table.Column<bool>(type: "bit", nullable: false),
                     CriadoEm = table.Column<DateTime>(type: "DATETIME", nullable: false),
-                    AtualizadoEM = table.Column<DateTime>(type: "DATETIME", nullable: false),
-                    RemovidoEm = table.Column<DateTime>(type: "DATETIME", nullable: false)
+                    AtualizadoEm = table.Column<DateTime>(type: "DATETIME", nullable: true),
+                    RemovidoEm = table.Column<DateTime>(type: "DATETIME", nullable: true)
                 },
                 constraints: table =>
                 {

@@ -14,8 +14,8 @@ namespace Mentoria.GGR.Lib.Models
         [Column(TypeName = "DATETIME")]
         public DateTime CriadoEm { get; set; }
         [Column(TypeName = "DATETIME")]
-        public DateTime AtualizadoEM { get; set; }
+        public DateTime? AtualizadoEm { get; set; }
         [Column(TypeName = "DATETIME")]
-        public DateTime RemovidoEm { get; set; }
+        public DateTime? RemovidoEm { get; set; }
     }
 }

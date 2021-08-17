@@ -19,4 +19,8 @@
     <ProjectReference Include="..\Mentoria.GGR.Lib\Mentoria.GGR.Lib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

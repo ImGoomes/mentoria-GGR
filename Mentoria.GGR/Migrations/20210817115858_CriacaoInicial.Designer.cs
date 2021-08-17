@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Mentoria.GGR.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210803224841_CriacaoInicial")]
+    [Migration("20210817115858_CriacaoInicial")]
     partial class CriacaoInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,7 +31,7 @@ namespace Mentoria.GGR.Migrations
                     b.Property<bool>("Ativo")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("AtualizadoEM")
+                    b.Property<DateTime?>("AtualizadoEm")
                         .HasColumnType("DATETIME");
 
                     b.Property<string>("Cidade")
@@ -46,7 +46,7 @@ namespace Mentoria.GGR.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("RemovidoEm")
+                    b.Property<DateTime?>("RemovidoEm")
                         .HasColumnType("DATETIME");
 
                     b.HasKey("ID");
@@ -64,7 +64,7 @@ namespace Mentoria.GGR.Migrations
                     b.Property<bool>("Ativo")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("AtualizadoEM")
+                    b.Property<DateTime?>("AtualizadoEm")
                         .HasColumnType("DATETIME");
 
                     b.Property<DateTime>("CriadoEm")
@@ -76,7 +76,7 @@ namespace Mentoria.GGR.Migrations
                     b.Property<int>("PoderID")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("RemovidoEm")
+                    b.Property<DateTime?>("RemovidoEm")
                         .HasColumnType("DATETIME");
 
                     b.HasKey("ID");
@@ -98,7 +98,7 @@ namespace Mentoria.GGR.Migrations
                     b.Property<bool>("Ativo")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("AtualizadoEM")
+                    b.Property<DateTime?>("AtualizadoEm")
                         .HasColumnType("DATETIME");
 
                     b.Property<DateTime>("CriadoEm")
@@ -110,7 +110,7 @@ namespace Mentoria.GGR.Migrations
                     b.Property<string>("Fraqueza")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("RemovidoEm")
+                    b.Property<DateTime?>("RemovidoEm")
                         .HasColumnType("DATETIME");
 
                     b.Property<string>("TipoPoder")
