@@ -24,7 +24,7 @@ namespace Mentoria.GGR.Controllers
         [HttpGet]
         public IEnumerable<Personagem> Get()
         {
-           var lista = _context.Personagens.ToArray();
+           var lista = _context.Personagens.ToArray().Where(x => x.Ativo == true || x.Cidade == "New York");
             return lista;
         }
 
